@@ -1,0 +1,173 @@
+/* Global CSS Variables */
+
+/* General Colors */
+:root {
+  --primary-bg: #F4F6F9; /* Light gray background */
+  --primary-text: #2F3A46; /* Dark gray text */
+  --button-bg: #4D90FE; /* Blue button */
+  --button-hover-bg: #357AE8; /* Darker blue for hover */
+  --input-border: #B2C6D9; /* Light blue border for inputs */
+  --input-focus-border: #4D90FE; /* Focused input border color */
+  --header-bg: #4D90FE; /* Header blue */
+  --header-text: #FFFFFF; /* White text for header */
+  --link-color: #4D90FE; /* Blue links */
+  --link-hover-color: #357AE8; /* Darker blue for link hover */
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text);
+}
+
+/* Light Mode Styling */
+.App {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* Buttons */
+button {
+  background-color: #007BFF;  
+  color: white;  
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;  /* Darker blue for hover */
+  transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--input-focus-border);
+  outline: none;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .navbar-button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .navbar-button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .navbar-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

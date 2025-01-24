@@ -1,0 +1,32 @@
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--primary-bg-light); /* Default light background */
+  }
+  
+  .login-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--input-border-light); /* Light mode border */
+  }
+
+  .login-button {
+    background-color: var(--button-bg);  /* Bright blue for login button */
+    color: white;
+  }
+  
+  .login-button:hover {
+    background-color: var(--button-hover-bg-light);  /* Darker blue on hover */
+  }
+  
+  
+  .login-button:hover {
+    background-color: var(--button-hover-bg-light);
+  }
+  
+  
